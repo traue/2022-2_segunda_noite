@@ -1,2 +1,8 @@
-# 2022-2_segunda_noite
-Repositório da disciplina "Programação Backend" de Segunda Noite - Turma 21
+# Programação Backend
+
+Turma 21 - Segundas noturno
+
+**E-mail do Professor:** thiago.traue@uni9.pro.br
+
+---
+
