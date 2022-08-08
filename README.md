@@ -14,6 +14,10 @@ Classroom da disciplina: EM BREVE
 
 ## Preparação do ambiente de desenvolvimento
 
+A preparação do ambiente de desenvolvimento fora desenvolvida na primeira aula em conjunto com a turma e pode ser acessada [NESTE LINK](https://docs.google.com/document/d/1QU7c-UYILqfhkM1vmHNpy-o3WLT3G8vrQLZ5lqW8kf8/edit?usp=sharing).
+
+Lembre-se que é necessário utilizar o e-mail institucional para acessar o documento acima.
+
 ## Critérios de Avaliação
 
 A média final do professor (AV1) é calculada simplesmente pela média de todas as atividades aplicadas no semestre.
