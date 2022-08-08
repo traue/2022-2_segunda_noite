@@ -29,3 +29,11 @@ Nessa disciplina aprenderemos a desenvolver sistemas web utilizando PHP. É impo
 Vamos trabalhar com os princiapis conceitos de PHP até bancos de dados relacionais. Faremos ao menos uma aplicação completa e aprenderemos, também, conceitos de API.
 
 ## Bibliografia básica
+
+Os catálogos podem ser acessados diretamente através da central do aluno. Lembre-se que é preciso utilizar o e-mail institucional (@uni9.edu.br) para os cadastros.
+
+O'Reilly:
+
+- [PHP Cookbook](https://learning.oreilly.com/library/view/php-cookbook/9781098121310/)
+- [Programming PHP](https://learning.oreilly.com/library/view/programming-php-4th/9781492054122/)
+- [PHP 8 Objects, Patterns, and Practice: Mastering OO Enhancements, Design Patterns, and Essential Development Tools](https://learning.oreilly.com/library/view/php-8-objects/9781484267912/)
