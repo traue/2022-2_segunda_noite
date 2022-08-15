@@ -4,7 +4,7 @@ Turma 21 - Segundas noturno
 
 **E-mail do Professor:** thiago.traue@uni9.pro.br
 
-Classroom da disciplina: EM BREVE
+Classroom da disciplina: [ESTE LINK](https://classroom.google.com/c/NTM4NDg0NTgxNDky?cjc=a4gq3qf)
 
 ---
 
@@ -31,6 +31,11 @@ O professor poderá a qualquer momento realizar perguntas avaliativas de pontos 
 Nessa disciplina aprenderemos a desenvolver sistemas web utilizando PHP. É importante salientar que o foco da disciplina é backend, ou seja, programação para servidores, embora desenvolvamos também um pouco de HTML, CSS e JavaScript (de front).
 
 Vamos trabalhar com os princiapis conceitos de PHP até bancos de dados relacionais. Faremos ao menos uma aplicação completa e aprenderemos, também, conceitos de API.
+
+## Links interessantes
+
+- [Curso de Git e GitHub](https://www.udemy.com/course/git-e-github-para-iniciantes/) - Udemy
+- [Curso de Git e GitHub](https://www.schoolofnet.com/curso/git/controle-de-versao/git-e-github/) - SchoolOfNet
 
 ## Bibliografia básica
 
