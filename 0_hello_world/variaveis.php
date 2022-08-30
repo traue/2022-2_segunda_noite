@@ -24,6 +24,7 @@
     <p>Idade: <?= $idade ?></p>
     <p>Time que torce: <?= $time ?></p>
     <p>Altura: <?= $altura ?></p>
-    
+
+    <!-- paramos aqui -->
 </body>
 </html>
