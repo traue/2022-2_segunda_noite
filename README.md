@@ -10,7 +10,11 @@ Classroom da disciplina: [ESTE LINK](https://classroom.google.com/c/NTM4NDg0NTgx
 
 ## Atividades
 
-- Essa disciplina ainda não demanda nenhuma atividade.
+Todas as atividades da disciplina devem ser realizadas via Classroom (link acima). Use o e-mail institucional, sempre.
+
+Todas as atividades vencem às 19:35 do dia informado na listagem abaixo.
+
+ - Atividade 1: 12.09 até 10.10
 
 ## Preparação do ambiente de desenvolvimento
 
