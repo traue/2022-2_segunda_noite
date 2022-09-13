@@ -32,7 +32,4 @@
 
     $encontrou = array_search("Leite", $lista["compras"]);
     echo $encontrou;
-
-    //na próxima aula: Explicar diferença entre false, null e empty
-    //iniciar laços
 ?>
