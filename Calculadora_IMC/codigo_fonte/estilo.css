@@ -1,0 +1,34 @@
+body {
+    background-color: ghostwhite;
+}
+
+.cabecalho {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(69,69,69);
+}
+
+.formulario {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    border: 1px dotted darkblue;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 10px;
+}
+
+form input[type="number"] {
+    width: 60px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkblue;
+}
