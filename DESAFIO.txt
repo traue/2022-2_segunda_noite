@@ -1,7 +1,8 @@
 Desafio para próxima aula
 
 
-Ajude um usuário a calcular o preço de uma viagem de carro ou moto!
+Ajude um usuário a calcular o preço de uma viagem de carro ou moto
+
 O usuário deverá fornecer:
  - O consumo do veículo em Km/L
  - Quanto ele pagou no litro do combustível (em R$)
@@ -10,4 +11,9 @@ O usuário deverá fornecer:
 
 
 O sistema deverá fornecer um "relatório":
- - 
+ - Todas as informações de entrada
+ - Total gasto com combustível apenas
+ - Total gasto na viagem total (combustível + pedágios)
+
+
+Desafio é: Descobrir as fórmulas para isso
