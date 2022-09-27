@@ -32,3 +32,13 @@ form input[type="submit"] {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: darkblue;
 }
+
+.resultados {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 340px;
+    border: 1px solid darkblue;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 10px;
+}
