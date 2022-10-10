@@ -1,10 +1,19 @@
-.formulario {
+.boxprincipal {
     border: 1px dotted #6959CD;
     border-radius: 5px;
     margin: auto;
     width: 450px;
     font-size: 20px;
     background: ghostwhite;
+    padding: 10px;
+}
+
+.boxprincipal h3 {
+    text-align: center;
+}
+
+.boxprincipal h2 {
+    text-align: center;
 }
 
 .div-campo-form {
@@ -14,13 +23,18 @@
 
 .div-campo-form input[type="number"] {
     width: 80px;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
 .div-calc {
     display: block;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.textoInforme {
+    text-align: center;
+    font-size: 18px;
 }
 
 .btn-calc[type="submit"] {
@@ -31,4 +45,15 @@
     height: 40px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.linkCalcularNovamente {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.linkCalcularNovamente a {
+    text-decoration: none;
+    color: blueviolet;
 }

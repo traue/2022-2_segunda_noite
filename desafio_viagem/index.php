@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <title>Calculadora da Viagem</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <h1>Calculadora da Viagem</h1>
     <hr>
 
-    <div>
+    <div class="textoInforme">
         <p>Informe os dados da viagem abaixo</p>
     </div>
 
-    <div class="formulario">
+    <div class="boxprincipal">
         <form method="post" action="viagem.php">
 
             <div class="div-campo-form">
@@ -32,14 +34,14 @@
 
             <div class="div-campo-form">
                 <label>Valor médio do combustível: R$ </label>
-                <input type="number" name="combustivel" step="0.01" min="0" required>
+                <input type="number" name="combustivel" step="0.001" min="0" required>
             </div>
 
             <div class="div-campo-form">
                 <label>Total gasto com pedágios: R$ </label>
                 <input type="number" name="pedagio" step="0.01" min="0" required>
             </div>
-            
+
             <div class="div-calc">
                 <input class="btn-calc" type="submit" value="Calcular Gastos">
             </div>
@@ -48,4 +50,5 @@
     </div>
 
 </body>
+
 </html>
