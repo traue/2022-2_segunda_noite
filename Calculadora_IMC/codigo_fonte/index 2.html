@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <div class="cabecalho">
+        <p>Calculadora IMC</p>
+        <hr>
+    </div>
+
+    <div class="formulario">
+        <form method="post" action="resultado_imc.php">
+            
+            <label>Informe o peso:</label>
+            <input type="number" min="0" name="peso" required>
+            <label>Kg</label>
+
+            <br><br>
+
+            <label>Informe a altura:</label>
+            <input type="number" min="0.1" step="0.01" name="altura" required> 
+            <label>m</label>
+
+            <br><br>
+
+            <input type="submit" value="Calcular IMC">
+        </form>
+    </div>
+
+</body>
+</html>
