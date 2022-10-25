@@ -7,10 +7,12 @@
         private $description;
         private $icon;
         private $humidity;
-        private $presure;
+        private $pressure;
+        private $wind_speed;
+        private $wind_deg;
 
         public function __get($atr) {
-            return $this->atr;
+            return $this->$atr;
         }
 
         public function __set($atr, $value){
