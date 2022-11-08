@@ -1,0 +1,5 @@
+<?php
+
+    //PARAMOS AQUI :P
+
+?>
