@@ -20,6 +20,17 @@ Todas as atividades vencem às 19:35 do dia informado na listagem abaixo.
  - Atividade 4: 21.10 até 05.11
  - Atividade 5: 21.10 até 05.11
 
+**Atividade de recuperação**
+
+Essa atividade é primordial se você perdeu alguma atividade. Você deverá implementar uma "urna eletrônica" completa,em PHP, com os seguintes requisitos:
+ 
+ - Cada usuário (usuário e senha) pode votar apenas em UMA eleição por vez
+ - Cada eleição pode ter N candidatos
+ - Para cada eleição é preciso ter uma forma de contabilizar os votos em cada candidato
+ - O sistema deve permitir cadastro de eleições
+ - O sistema deve permitir cadastro de candidatos em eleições
+ 
+
 ## Avaliação Integrada
 
 Ocorrerá no dia **08.12**
