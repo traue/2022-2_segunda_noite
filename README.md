@@ -18,6 +18,10 @@ Todas as atividades vencem às 19:35 do dia informado na listagem abaixo.
  - Atividade 2: 10.10 até 31.10 - Encerrada
  - Atividade 3: 24.10 até 21.11
 
+## Avaliação Integrada
+
+Ocorrerá no dia **08.12**
+
 ## Preparação do ambiente de desenvolvimento
 
 A preparação do ambiente de desenvolvimento fora desenvolvida na primeira aula em conjunto com a turma e pode ser acessada [NESTE LINK](https://docs.google.com/document/d/1QU7c-UYILqfhkM1vmHNpy-o3WLT3G8vrQLZ5lqW8kf8/edit?usp=sharing).
