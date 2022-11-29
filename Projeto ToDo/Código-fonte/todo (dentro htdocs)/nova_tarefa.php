@@ -1,7 +1,3 @@
-<?php
-    $acao = "recuperarTarefasPendentes";
-    require "tarefa_controller.php";
-?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -27,12 +23,18 @@
         </div>
     </nav>
 
+    <?php if (isset($_GET['inclusao']) && $_GET['inclusao'] == 1) : ?>
+        <div class="pt-2 d-flex justify-content-center confirmacao">
+            <h5>Tarefa inserida com sucesso!</h5>
+        </div>
+    <?php endif; ?>
+
     <div class="container aplicacao">
         <div class="row">
             <div class="col-sm-3 menu">
                 <ul>
-                    <li class="list-group-item active"><a href="./">Tarefas Pendentes</a></li>
-                    <li class="list-group-item"><a href="nova_tarefa.php">Nova Tarefa</a></li>
+                    <li class="list-group-item "><a href="./">Tarefas Pendentes</a></li>
+                    <li class="list-group-item active"><a href="#">Nova Tarefa</a></li>
                     <li class="list-group-item"><a href="todas_tarefas.php">Todas Tarefas</a></li>
                 </ul>
             </div>
@@ -41,35 +43,19 @@
                 <div class="container conteudo">
                     <div class="row">
                         <div class="col">
-                            <h4>Tarefas Pendentes</h4>
+                            <h4>Nova Tarefa</h4>
                             <hr>
-
-                            <?php foreach($tarefas as $indice => $tarefa) { ?>
-                                <div class="row mb-3 d-flex align-items-center">
-
-                                    <div class="col-sm-9">
-                                        <?= $tarefa->tarefa ?>
-                                    </div>
-
-                                    <div class="col-sm-3 d-flex justify-content-between">
-                                        <i class="fa-regular fa-trash-can fa-lg text-danger"></i>
-                                        <i class="fa-regular fa-pen-to-square fa-lg text-info"></i>
-                                        <i class="fa-regular fa-circle-check fa-lg text-success"></i>
-                                    </div>
-                                    
+                            <form action="tarefa_controller.php?acao=inserirTarefa" method="post">
+                                <div class="form-group">
+                                    <label>Tarefa: </label>
+                                    <input class="form-control" type="text" name="tarefa" placeholder="Exemplo: Comprar pepinos" required>
                                 </div>
-                            <?php } ?>
-
+                                <button class="mt-3 btn btn-outline-success w-100">Adicionar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-
 </body>
-
-</html>

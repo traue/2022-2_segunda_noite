@@ -1,5 +1,5 @@
 <?php
-    $acao = "recuperarTarefasPendentes";
+    $acao = "recuperarTodasTarefas";
     require "tarefa_controller.php";
 ?>
 <!DOCTYPE html>
@@ -31,9 +31,9 @@
         <div class="row">
             <div class="col-sm-3 menu">
                 <ul>
-                    <li class="list-group-item active"><a href="./">Tarefas Pendentes</a></li>
+                    <li class="list-group-item"><a href="./">Tarefas Pendentes</a></li>
                     <li class="list-group-item"><a href="nova_tarefa.php">Nova Tarefa</a></li>
-                    <li class="list-group-item"><a href="todas_tarefas.php">Todas Tarefas</a></li>
+                    <li class="list-group-item active"><a href="#">Todas Tarefas</a></li>
                 </ul>
             </div>
 
@@ -41,7 +41,7 @@
                 <div class="container conteudo">
                     <div class="row">
                         <div class="col">
-                            <h4>Tarefas Pendentes</h4>
+                            <h4>Todas as Tarefas</h4>
                             <hr>
 
                             <?php foreach($tarefas as $indice => $tarefa) { ?>
@@ -53,8 +53,10 @@
 
                                     <div class="col-sm-3 d-flex justify-content-between">
                                         <i class="fa-regular fa-trash-can fa-lg text-danger"></i>
-                                        <i class="fa-regular fa-pen-to-square fa-lg text-info"></i>
-                                        <i class="fa-regular fa-circle-check fa-lg text-success"></i>
+                                        <?php if ($tarefa->status == 'pendente') : ?>
+                                            <i class="fa-regular fa-pen-to-square fa-lg text-info"></i>
+                                            <i class="fa-regular fa-circle-check fa-lg text-success"></i>
+                                        <?php endif ?>
                                     </div>
                                     
                                 </div>

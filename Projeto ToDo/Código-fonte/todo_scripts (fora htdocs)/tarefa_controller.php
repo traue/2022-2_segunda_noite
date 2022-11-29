@@ -12,5 +12,15 @@
     if ($acao == 'recuperarTarefasPendentes') {
         $tarefa->__set('id_status', 1);
         $tarefas = $tarefaService->listarTarefasPendentes();
-    } //paramos aqui
+    }
+
+    if ($acao == 'inserirTarefa') {
+        $tarefa->__set('tarefa', $_POST['tarefa']);
+        $tarefaService->inserirTarefa();
+        header('Location: nova_tarefa.php?inclusao=1');
+    }
+
+    if ($acao == 'recuperarTodasTarefas') {
+        $tarefas = $tarefaService->listarTodasTarefas();
+    }
 ?>

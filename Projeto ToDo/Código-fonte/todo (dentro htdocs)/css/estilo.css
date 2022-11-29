@@ -1,1 +1,46 @@
-/* FAREMOS EM BREVE */
+.menu {
+    margin-bottom: 25px;
+}
+
+.aplicacao {
+    margin-top: 30px;
+}
+
+.conteudo {
+    border: 1px dotted orange;
+    padding: 25px !important;
+}
+
+li.list-group-item {
+    border: 1px solid pink;
+    padding: 10px;
+    border-left: 10px solid pink;
+}
+
+li.list-group-item.active {
+    background-color: pink;
+    border-bottom: palevioletred;
+    border-right: 1px solid pink;
+    border-top: 0px;
+    border-left: 10px solid palevioletred;
+    /* border-bottom: 10px solid palevioletred; */
+    padding: 10px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: red;
+}
+
+h4 {
+    color: palevioletred;;
+}
+
+.confirmacao {
+    background-color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+}

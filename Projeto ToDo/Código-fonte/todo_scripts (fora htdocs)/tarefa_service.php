@@ -15,15 +15,34 @@
         public function listarTarefasPendentes() {
             $query = '
                 SELECT t.id, t.tarefa, t.data_cadastro, s.status
-                FROM tb_tarefas as t
-                LEFT JOIN tb_status as s on (t.id_status = s.id)
-                WHERE t.id_status = :id_status';
+                    FROM tb_tarefas as t
+                    LEFT JOIN tb_status as s on (t.id_status = s.id)
+                WHERE t.id_status = :id_status
+                ORDER BY t.data_cadastro';
             
             $stmt = $this->conexao->prepare($query);
             $stmt->bindValue(':id_status', $this->tarefa->__get('id_status'));
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
-    }
 
+        public function inserirTarefa() {
+            $query = 'INSERT INTO tb_tarefas(tarefa) VALUE(:tarefa)';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':tarefa', $this->tarefa->__get('tarefa'));
+            $stmt->execute();
+        }
+
+        public function listarTodasTarefas() {
+            $query = '
+                SELECT t.id, t.tarefa, t.data_cadastro, s.status
+                    FROM tb_tarefas as t
+                    LEFT JOIN tb_status as s on (t.id_status = s.id)
+                ORDER BY s.id, t.data_cadastro';
+            
+            $stmt = $this->conexao->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+        }
+    }
 ?>
