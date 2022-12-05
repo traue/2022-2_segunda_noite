@@ -17,8 +17,8 @@ Todas as atividades vencem às 19:35 do dia informado na listagem abaixo.
  - Atividade 1: 12.09 até 10.10 - Encerrada
  - Atividade 2: 10.10 até 31.10 - Encerrada
  - Atividade 3: 24.10 até 21.11 - Encerrada
- - Atividade 4: 21.10 até 05.11
- - Atividade 5: 21.10 até 05.11
+ - Atividade 4: 21.10 até 05.11 - Encerrada
+ - Atividade 5: 21.10 até 05.11 - Encerrada
 
 **Atividade de recuperação**
 
