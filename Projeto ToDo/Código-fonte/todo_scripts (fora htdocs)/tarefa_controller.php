@@ -23,4 +23,39 @@
     if ($acao == 'recuperarTodasTarefas') {
         $tarefas = $tarefaService->listarTodasTarefas();
     }
-?>
+
+    if ($acao == 'concluirTarefa') {
+        $tarefa->__set('id', $_GET['id']);
+        $tarefa->__set('id_status', 2);
+        $tarefaService->concluirTarefa();
+
+        if (isset($_GET['pg']) && $_GET['pg'] == 'index') {
+            header('Location: index.php');
+        } else {
+            header('Location: todas_tarefas.php');
+        }
+    }
+
+    if ($acao == 'excluirTarefa') {
+        $tarefa->__set('id', $_GET['id']);
+        $tarefaService->excluirTarefa();
+        
+        if (isset($_GET['pg']) && $_GET['pg'] == 'index') {
+            header('Location: index.php');
+        } else {
+            header('Location: todas_tarefas.php');
+        }
+    }
+
+    if ($acao == 'atualizarTarefa') {
+        $tarefa->__set('id', $_POST['id']);
+        $tarefa->__set('tarefa', $_POST['tarefa']);
+
+        $tarefaService->atualizaTarefa();
+
+        if (isset($_GET['pg']) && $_GET['pg'] == 'index') {
+            header('Location: index.php');
+        } else {
+            header('Location: todas_tarefas.php');
+        }
+    }

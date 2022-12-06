@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/69e5255fc0.js" crossorigin="anonymous"></script>
     <link href="img/logo.png" rel="icon" type="image/x-icon">
+    <script src="js/acao_tarefa.js"></script>
 </head>
 
 <body>
@@ -47,14 +48,14 @@
                             <?php foreach($tarefas as $indice => $tarefa) { ?>
                                 <div class="row mb-3 d-flex align-items-center">
 
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-9" id="tarefa_<?=$tarefa->id?>">
                                         <?= $tarefa->tarefa ?>
                                     </div>
 
                                     <div class="col-sm-3 d-flex justify-content-between">
-                                        <i class="fa-regular fa-trash-can fa-lg text-danger"></i>
-                                        <i class="fa-regular fa-pen-to-square fa-lg text-info"></i>
-                                        <i class="fa-regular fa-circle-check fa-lg text-success"></i>
+                                        <i class="fa-regular fa-trash-can fa-lg text-danger" onclick="excluirTarefa(<?=$tarefa->id?>, 'index')"></i>
+                                        <i class="fa-regular fa-pen-to-square fa-lg text-info" onclick="atualizarTarefa(<?=$tarefa->id?>, '<?=$tarefa->tarefa?>', 'index')"></i>
+                                        <i class="fa-regular fa-circle-check fa-lg text-success" onclick="concluirTarefa(<?=$tarefa->id?>, 'index')"></i>
                                     </div>
                                     
                                 </div>

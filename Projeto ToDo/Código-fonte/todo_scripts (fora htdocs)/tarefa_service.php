@@ -44,5 +44,27 @@
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_OBJ);
         }
+
+        public function concluirTarefa() {
+            $query = 'UPDATE tb_tarefas SET id_status = ? WHERE id = ?';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(1, $this->tarefa->__get('id_status'));
+            $stmt->bindValue(2, $this->tarefa->__get('id'));
+            $stmt->execute();
+        }
+
+        public function excluirTarefa() {
+            $query = 'DELETE FROM tb_tarefas WHERE id = ?';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(1, $this->tarefa->__get('id'));
+            $stmt->execute();
+        }
+
+        public function atualizaTarefa() {
+            $query = 'UPDATE tb_tarefas SET tarefa = ? WHERE id = ?';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(1, $this->tarefa->__get('tarefa'));
+            $stmt->bindValue(2, $this->tarefa->__get('id'));
+            $stmt->execute();
+        }
     }
-?>
